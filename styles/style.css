@@ -120,6 +120,8 @@ main{
        padding-top: 70px;
    }
    .news-frame{
+       text-decoration: none;
+       color: rgb(71, 69, 69);
        background-color: #FFFFFF;
        margin: 5px;
        padding-left: 3px;
