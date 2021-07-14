@@ -1,0 +1,245 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* commom styles or utilities*/
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/*-------------------------------------------
+               Header Style 
+  --------------------------------------------*/
+header{
+    background-color: #2020a3;
+    display: flex;
+}
+.header-title{
+   width: 485px;
+   height: 230px;
+   margin:0px;
+padding-top: 207px;
+padding-left: 156px;
+padding-right: 102px;
+padding-bottom: 50px;
+font-family: Poppins;
+color: #FFFFFF;
+font-weight: 700;
+font-size: 64px;
+
+}
+.link-button{
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: #FFFFFF;
+    margin-left: 156px;
+    margin-bottom: 169px;
+    
+}
+
+header img{
+width: 556.01px;
+height: 438px;
+padding-top: 153px;
+padding-right: 140px;
+padding-bottom: 86px;
+}
+header:hover img{
+    transform: rotate(50deg);
+    transition: transform 2s ease-out;
+}
+header:hover{
+    background-color: #a9b1b9;
+    transition: background-color 3s ease;
+}
+header:hover .header-title{
+    color:#2020a3;
+    transition: color 3s ease;
+}
+
+
+/* --------------------- */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3F1FF;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.section-title{
+    font-family:'Poppins', sans-serif;
+    font-weight: 700;
+    size: 60px;
+    color: #050561;
+    padding-top: 100px;
+}
+.h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    size: 50px;
+}
+
+/*-----------------------------------
+            Players Style
+  ----------------------------------- */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 25px;
+
+    
+}
+.player{
+    width: 300px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    padding:15px;
+    background-color: azure;
+    box-shadow: 10px 10px 40px rgb(104, 94, 94);
+   
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+.player-name{
+     font-size: 23px;
+     margin-bottom: 0px;
+} 
+
+/* --------------------------------------------------
+                    NEWS Style
+   --------------------------------------------------- */
+   .news{
+       display: flex;
+       padding-top: 70px;
+   }
+   .news-frame{
+       background-color: #FFFFFF;
+       margin: 5px;
+       padding-left: 3px;
+       height: 450px;
+       width:311px;
+       overflow: hidden;
+
+   }
+   .photo-title{
+       background-color: #FFFFFF;
+
+   }
+   .photo-details{
+       display: none;
+   }
+   .news-frame:hover .photo-details{
+       display:block;
+       
+   }
+   .news-frame:hover .photo-title{
+       position: relative;
+       top:-100px;
+   }
+   /*---------------------------------------
+          Club Schedule Style 
+    ---------------------------------------*/
+   .club-schedule{
+       padding-top: 70px;
+       padding-bottom: 70px;
+   }
+ .game{
+     size: 30px;
+     color: mediumblue;
+ }
+
+ /*---------------------------------------------
+                Live Style 
+   ---------------------------------------------*/
+ .live{
+     display: flex;
+     background-color: #a9b1b9;
+     border-radius: 20px;
+     height: 263.58px;
+
+ }
+ .live-detail{
+     padding: 40px;
+     
+ }
+ .live img{
+     width: 350px;
+     overflow: hidden;
+     box-shadow: 10px 10px 40px rgb(104, 94, 94);
+     border-radius: 20px;
+ }
+ .live:hover img{
+     transform: scale(1.1);
+     transition: transform 1s ease-out;
+ }
+/* ----------------------------------------------------
+                   Footer Style
+   ---------------------------------------------------- */
+   
+footer{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 70px;
+}
+footer img{
+    width:483.88px;
+    height:110px;
+}
+.social-media{
+    display: flex;
+}
+.social-media-item{
+  color: grey;
+  background-color: rgb(212, 219, 226);
+  padding: 16px;
+  margin: 7px;
+  border-radius: 50%;
+}
+
+
+/* Media Queries
+ Mobile Devices */
+
+@media only screen and (max-width:688px) {
+    .body{
+        width: 100%;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header, .news, .live{
+        flex-direction: column;
+    }
+}
+
+
+ /* tablet devices */
+ @media only screen and (min-width: 688px) and (max-width:992px) {
+    .body{
+        width: 100%;
+    } 
+
+    .players{
+         grid-template-columns: repeat(2, 1fr);
+          padding-left: 30px;
+     }
+    .news{
+        flex-direction: column;
+    }
+    .club-schedule{
+        width: 600px;
+    }
+     }
+
